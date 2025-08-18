@@ -8,11 +8,11 @@
 <body class="mt-8 mx-16">
     <div class="space-y-20">
         <!-- header-->
-        <div class="flex gap-4 flex-wrap  justify-between space-y-2 md:justify-between">
+        <div class="flex flex-col items-center gap-4 md:flex-row space-y-2 md:justify-between">
             <div  class="h-4">
                 <img class="w-24" src="images/Logo.png" alt="LaslesVPN">
             </div>
-            <div class="flex gap-4  md:gap-10">
+            <div class="flex gap-4  md:gap-10 opacity-70">
                 <div><a href="#">About</a></div>
                 <div><a href="#">Features</a></div>
                 <div><a href="#">Pricing</a></div>
@@ -20,13 +20,13 @@
                 <div><a href="#">Help</a></div>
             </div>
             <div class="flex gap-2 md:gap-4  font-semibold">
-                <div  class="text-center w-16 hover:border-2 hover:border-red-300 hover:rounded-2xl hover:text-red-500"><button>Sign In</button></div>
-                <div class="text-center w-16 hover:border-2 hover:border-red-300 hover:rounded-2xl hover:text-red-500"><button>Sign Up</button></div>
+                <div  class="text-center w-24 hover:border-2 hover:border-red-300 hover:rounded-2xl hover:text-red-500"><button>Sign In</button></div>
+                <div class="text-center w-24 hover:border-2 hover:border-red-300 hover:rounded-2xl hover:text-red-500"><button>Sign Up</button></div>
             </div>
         </div>
         <!--getting started-->
-        <div class="flex justify-between">
-            <div class="space-y-2  grid gap-8 ">
+        <div class="flex  flex-col  gap-4 justify-between md:flex-row">
+            <div class=" order-2 space-y-2  grid gap-8 ">
                 <div><h1 class="text-4xl ">Want anything to be easy with <span class="text-5xl font-bold">LaslesVPN.</span></h1></div>
                 <div class="opacity-40"><p>Provide a network for all your needs with ease and fun using <span class="font-semibold text-2xl">LaslesVPN</span><br> discover intesting features from us.</p></div>
                 <div class=" bg-red-600 w-40 h-10  rounded-lg text-red-50 shadow-md shadow-red-400 flex justify-center "><button class="text-lg font-semibold ">Get Started</button></div>
@@ -37,7 +37,7 @@
 
         </div>
         <!--users-->
-        <div class="flex px-10 justify-between flex-wrap">
+        <div class="flex flex-col gap-4 md:flex-row justify-around ">
             <div class="flex">
                 <div><img src="images/user/user.png" alt=""></div>
                 <div>
@@ -61,22 +61,250 @@
             </div>
         </div>
         <!--Features-->
-        <div class="grid grid-cols-2 gap-2 md:gap-8">
+        <div class="flex flex-col md:flex-row md:justify-between">
             <div>
                 <img src="images/Illustration 2 (1).png" alt="">
             </div>
-            <div class="pt-6 space-y-4">
-                <h1 class="text-lg font-bold">We Provide Many Features You Can use</h1>
-                <p>You can explore the features that we provide with fun and have their own function each feature.</p>
-                <ul class="list-disc">
-                    <li>Powerfull online protection</li>
-                    <li>Internet without borders.</li>
-                    <li>Superchanged VPN</li>
-                    <li>No specific time limits.</li>
+            <div class=" space-y-6 flex flex-col justify-end">
+                <h1 class="text-xl font-bold">We Provide Many Features You Can use</h1>
+                <p class="opacity-70">You can explore the features that we provide with fun and have their own function each feature.</p>
+                <ul class="list-none flex flex-col gap-4 opacity-70">
+                    <li class="flex gap-3"> <i><img src="images/list.png" alt=""></i>Powerfull online protection</li>
+                    <li class="flex gap-3"> <i><img src="images/list.png" alt=""></i>Internet without borders.</li>
+                    <li class="flex gap-3"> <i><img src="images/list.png" alt=""></i>Superchanged VPN</li>
+                    <li class="flex gap-3"> <i><img src="images/list.png" alt=""></i>No specific time limits.</li>
                 </ul>
             </div>
+        </div>
+        <!--plan-->
+        <div class="flex flex-col items-center">
+            <h1 class="text-xl font-bold pb-4">Choose Your Plan</h1>
+            <p class="opacity-70">Let's choose the package that is best for you and explore it hppily and</p>
+            <p class="opacity-70">cheerfully.</p>
+        </div>
+    
+        <div class="grid gap-4 md:grid-cols-3">
+            <div class="border-2 w-72 ">
+                    <div class="flex flex-col items-center space-y-8">
+                        <div class= "pt-12"><img src="images/Illustration/Free.png" alt=""></div>
+                        <h1 class="text-xl font-bold">Free Plan</h1>
+                        <ul class="space-y-2">
+                            <li class="flex flex-row gap-2"><i><img src="images/tick.png" alt=""></i>Unlimited bandwith</li>
+                            <li class="flex flex-row gap-2"><i><img src="images/tick.png" alt=""></i>Encrypted Connection</li>
+                            <li class="flex flex-row gap-2"><i><img src="images/tick.png" alt=""></i>No Traffic Logs</li>
+                            <li class="flex flex-row gap-2"><i><img src="images/tick.png" alt=""></i>Works in All Devices</li>
+                        </ul>
+                    </div>
+                    <div class="flex flex-col items-center mt-32 pb-10">
+                        <h1 class="text-xl font-bold">Free</h1>
+                        <div class="group w-32 h-10 border-2 border-red-600 flex justify-center rounded-3xl  hover:bg-red-500 hover:text-white"><button class="text-xl font-3xl text-red-600 group-hover:text-white">Select</button></div>
+                    </div>
+            </div>
+            <div class="border-2 w-72">
+                    <div class="flex flex-col items-center space-y-8">
+                        <div class= "pt-12"><img src="images/Illustration/Free.png" alt=""></div>
+                        <h1 class="text-xl font-bold">Standard Plan</h1>
+                        <ul class="space-y-2">
+                            <li class="flex flex-row gap-2"><i><img src="images/tick.png" alt=""></i>Unlimited bandwith</li>
+                            <li class="flex flex-row gap-2"><i><img src="images/tick.png" alt=""></i>Encrypted Connection</li>
+                            <li class="flex flex-row gap-2"><i><img src="images/tick.png" alt=""></i>Yes Traffic Logs</li>
+                            <li class="flex flex-row gap-2"><i><img src="images/tick.png" alt=""></i>Works in All Devices</li>
+                            <li class="flex flex-row gap-2"><i><img src="images/tick.png" alt=""></i>Connect Anyware</li>
+                            
+                        </ul>
+                    </div>
+                        <div class="flex flex-col items-center mt-24 pb-10">
+                            <h1 class="text-xl font-bold">$9 <span class="text-sm opacity-70">/mo</span></h1>
+                            <div class="group w-32 h-10 border-2 border-red-600 flex justify-center rounded-3xl  hover:bg-red-500"><button class="text-xl font-3xl text-red-600 group-hover:text-white">Select</button></div>
+                        </div>
+            </div>
+            <div class="border-2 w-72">
+                    <div class="flex flex-col items-center space-y-8">
+                        <div class= "pt-12"><img src="images/Illustration/Free.png" alt=""></div>
+                        <h1 class="text-xl font-bold">Premium Plan</h1>
+                        <ul class="space-y-2">
+                            <li class="flex flex-row gap-2"><i><img src="images/tick.png" alt=""></i>Unlimited bandwith</li>
+                            <li class="flex flex-row gap-2"><i><img src="images/tick.png" alt=""></i>Encrypted Connection</li>
+                            <li class="flex flex-row gap-2"><i><img src="images/tick.png" alt=""></i>Yes Traffic Logs</li>
+                            <li class="flex flex-row gap-2"><i><img src="images/tick.png" alt=""></i>Works in All Devices</li>
+                            <li class="flex flex-row gap-2"><i><img src="images/tick.png" alt=""></i>Connect Anyware</li>
+                            <li class="flex flex-row gap-2"><i><img src="images/tick.png" alt=""></i>Get New Features</li>
+                        </ul>
+                    </div>
+                    <div class="flex flex-col items-center mt-16 pb-10">
+                        <h1 class="text-xl font-bold">$12 <span class="text-sm opacity-70">/mo</span></h1>
+                        <div class="group w-32 h-10 border-2 border-red-600 flex justify-center rounded-3xl  hover:bg-red-500 hover:text-white"><button class="group-hover:text-white text-xl font-3xl text-red-600">Select</button></div>
+                    </div>
+                </div>
+        </div>
+        <!--before last-->
+        <div class="flex flex-col items-center">
+            <h1 class="text-3xl font-bold mt-10">Huge Global Network</h1>
+            <h1 class="text-3xl font-bold ">Of Fast VPN</h1>
+            <p class="opacity-70 mt-8">See <span class="text-xl font-semibold">Lasles</span> everywhere to make it easier for you when you move</p>
+            <p class="opacity-70">locations.</p>
+        </div>
+        <!--global-->
+        <div>
+            <img src="images/Huge Global.png" alt="">
+        </div>
+        <div>
+            <img src="images/Sponsored.png" alt="">
+        </div>
+        <!--last paragraph-->
+        <div class="flex flex-col items-center">
+            <h1 class="text-3xl font-bold mt-10">Trusted by Thousands of </h1>
+            <h1 class="text-3xl font-bold ">Happy Customer</h1>
+            <p class="opacity-70 mt-8">These are the stories of our customers who have joined us with great </p>
+            <p class="opacity-70">pleasuse where using this crazy feature.</p>
+        </div>
+        <!--card of customers-->
+        <div class="grid gap-2 md:grid-cols-3 md:gap-4">
+            <div class="border-2 rounded-xl w-80 px-6 py-4 hover:border-red-600">
+                <div class="flex justify-between">
+                        <div class="flex gap-4 ">
+                            <img src="images/warsaw.png" alt="">
+                            <div>
+                                <h1 class="text-xl font-bold">Viezh Robert</h1>
+                                <p class="opacity-70">warsaw, Poland</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex gap-2 pt-4">
+                                <p>4.5</p> 
+                                <i><img src="images/star.png" alt=""></i>
+                            </div>
+                        </div>
+                </div>
+                <div class="mt-4 opacity-90">
+                        <p>
+                            "Wow... I am very happy to use this VPN, it turned out to be more
+                            than my expectations and so far there have been no problems.<br>
+                            LaslesVPN always the best."
+                        </p>
+                </div>
+            </div>
+            <div class="border-2 rounded-xl w-80 px-6 py-4 hover:border-red-600">
+                <div class="flex justify-between">
+                        <div class="flex gap-4 ">
+                            <img src="images/someone.png" alt="">
+                            <div>
+                                <h1 class="text-xl font-bold">Kim Young Jou</h1>
+                                <p class="opacity-70">Seoul, South Korea</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex gap-2 pt-4">
+                                <p>4.5</p> 
+                                <i><img src="images/star.png" alt=""></i>
+                            </div>
+                        </div>
+                </div>
+                <div class="mt-4 opacity-90">
+                        <p>
+                            "This is very unusual for my business that currently requires
+                            a virtual private network that has hign security"
+                        </p>
+                </div>
+            </div>
+            <div class="border-2 rounded-xl w-80 px-6 py-4 hover:border-red-600">
+                <div class="flex justify-between">
+                        <div class="flex gap-4 ">
+                            <img src="images/customer.png" alt="">
+                            <div>
+                                <h1 class="text-xl font-bold">Yessica Christy</h1>
+                                <p class="opacity-70">Shanxi, China</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex gap-2 pt-4">
+                                <p>4.5</p> 
+                                <i><img src="images/star.png" alt=""></i>
+                            </div>
+                        </div>
+                </div>
+                <div class="mt-4 opacity-90">
+                        <p>
+                            "I like it because i like to travel far and still can
+                            connect with hing speed."
+                        </p>
+                </div>
+            </div>
+        </div>
+        <!--ticks-->
+        <div class="flex justify-between">
+            <div class="flex gap-2">
+                <p class="w-8 h-2 bg-red-500 rounded-2xl"></p>
+                <p class="w-2 h-2 bg-gray-600 rounded-full"></p>
+                <p class="w-2 h-2 bg-gray-600 rounded-full"></p>
+                <p class="w-2 h-2 bg-gray-600 rounded-full"></p>
+            </div>
+            <div class="flex gap-2">
+                <div  class="group w-10 h-10 border-2 border-red-500 rounded-full  flex items-center justify-center hover:bg-red-500"><p class="text-2xl  group-hover:text-white text-red-500">←</p></div>
+                <div  class="group w-10 h-10 border-2 border-red-500 rounded-full  flex items-center justify-center hover:bg-red-500"><p class="text-2xl  group-hover:text-white text-red-500">→</p></div>
+                
+            </div>
+        </div>
+        <!--last-->
+        <div class="flex flex-col gap-2 md:justify-around md:flex-row px-10">
+            <div class="space-y-4">
+                <h1 class="text-xl font-bold">Subscribe Now for <br>Get Special Features!</h1>
+                <p class="opacity-90">Let's subscribe with us and find the fun.</p>
+            </div>
+            <div class="w-48 h-10 bg-red-600 border-2 rounded-lg border-red-600 flex justify-center shodow-2 shadow-lg ">
+                <button class="text-xl font-semibold text-white">Subscribe Now</button>
+            </div>
+        </div>
+        <!--footer-->
+        <div class="bg-gray-200 flex flex-col md:flex md:flex-row md:justify-between">
+            <div class="flex gap-2 justify-between md:order-2 md:gap-20">
+                <div>
+                    <h1 class="text-xl font-bold">Product</h1>
+                    <ul class="mt-4">
+                        <li>Download</li>
+                        <li>Pricing</li>
+                        <li>Location</li>
+                        <li>Server</li>
+                        <li>Countries</li>
+                        <li>Blog</li>
+                    </ul>
+                </div>
+                <div>
+                    <h1 class="text-xl font-bold">Engage</h1>
+                    <ul class="mt-4">
+                        <li>LaslesVPN ?</li>
+                        <li>FAQ</li>
+                        <li>Tutorial</li>
+                        <li>About us</li>
+                        <li>Privacy Policy</li>
+                        <li>Terms of Servise</li>
+                    </ul>
+                </div>
+                <div>
+                    <h1 class="text-xl font-bold">Earn Money</h1>
+                    <ul class="mt-4">
+                        <li>Affiliate</li>
+                        <li>Become Partner</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-6 space-y-6">
+                <div class="h-6 w-24"><img src="images/Logo.png" alt=""></div>
+                <div>
+                    <p class="opacity-80"><span class="font-bold">LaslesVPN</span> is a private virtual network that has unique features and has high security.</p>
+                </div>
+                <div class="flex">
+                    <div><img src="images/Facebook.png" alt=""></div>
+                    <div><img src="images/Twitter.png" alt=""></div>
+                    <div><img src="images/Instagram.png" alt=""></div>
+                </div>
+                <div class="opacity-80">&copy;2020LaslesVPN</div>
+            </div>
+            <div></div>
+            <div></div>
+            <div></div>
         </div>
     </div>
     <script type="module" src="/src/main.js"></script>
 </body>
-</html>
+</html
